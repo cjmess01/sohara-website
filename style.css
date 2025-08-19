@@ -17,8 +17,22 @@ header {
 }
 
 .header_logo {
-  width: 400px;
+  width: 140px;
+  /* default (mobile-first) */
   height: auto;
+}
+
+/* Larger screens (tablet/desktop) */
+@media (min-width: 768px) {
+  .header_logo {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header_logo {
+    width: 250px;
+  }
 }
 
 header h1 {
