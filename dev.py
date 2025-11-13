@@ -2,7 +2,6 @@ import http.server
 import socketserver
 
 PORT = 8000  # You can change this if needed
-
 class NoCacheHandler(http.server.SimpleHTTPRequestHandler):
     def end_headers(self):
         # Disable caching
